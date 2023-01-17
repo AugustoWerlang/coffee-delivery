@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: inherit;
   }
   :focus {
     outline: none;
@@ -18,5 +17,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.3;
+  }
+  button, input {
+    font: inherit;
+  }
+  img {
+    max-width: 100%;
   }
 `
