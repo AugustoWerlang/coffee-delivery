@@ -8,35 +8,29 @@ export const HomeBanner = styled.div`
   aspect-ratio: 1440/544;
   display: grid;
   place-items: center;
-`
+  
+  > div {
+    max-width: 74rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3.5rem;
+    place-items: center;
+  }
 
-export const HomeBannerContent = styled.div`
-  max-width: 74rem;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3.5rem;
-  place-items: center;
-`
+  h1 {
+    color: ${(props) => props.theme['base-title']};
+    font-size: 3rem;
+    font-family: 'Baloo 2';
+    font-weight: 900;
+    padding-bottom: 1rem;
+  }
 
-export const HomeMain = styled.div`
-  padding: 2rem;
-  max-width: 74rem;
-  margin: 0 auto;
-`
-
-export const Title = styled.h1`
-  color: ${(props) => props.theme['base-title']};
-  font-size: 3rem;
-  font-family: 'Baloo 2';
-  font-weight: 900;
-  padding-bottom: 1rem;
-`
-
-export const Subtitle = styled.h5`
-  color: ${(props) => props.theme['base-subtitle']};
-  font-size: 1.25rem;
-  font-weight: 400;
+  h5 {
+    color: ${(props) => props.theme['base-subtitle']};
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
 `
 
 export const FeaturesList = styled.ul`
@@ -72,6 +66,64 @@ export const FeaturesList = styled.ul`
   }
 `
 
-export const SectionTitle = styled.h1``
+export const HomeMain = styled.div`
+  padding: 2rem;
+  max-width: 74rem;
+  margin: 0 auto;
 
-export const CardTitle = styled.h1``
+  h2 {
+    color: ${(props) => props.theme['base-subtitle']};
+    font-size: 2rem;
+    font-family: 'Baloo 2';
+    font-weight: 900;
+    margin-bottom: 3.375rem;
+  }
+`
+
+export const CardsWrapper = styled.div`
+  display: grid;
+  gap: 2.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+`
+
+export const Card = styled.div`
+  background: ${(props) => props.theme['base-card']};
+
+  img {
+    margin: -20px auto 0;
+    display: block;
+  }
+
+  > span {
+
+  }
+
+  h4 {
+    color: ${(props) => props.theme['base-subtitle']};
+    font-size: 1.25rem;
+    font-family: 'Baloo 2';
+    font-weight: 700;
+  }
+
+  p {
+
+  }
+
+  div {
+
+    span {
+
+      span {
+
+      }
+    }
+
+    input {
+
+    }
+
+    button {
+
+    }
+  }
+`

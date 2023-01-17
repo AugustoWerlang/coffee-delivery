@@ -1,18 +1,18 @@
-import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { FeaturesList, HomeBanner, HomeBannerContent, HomeMain, Subtitle, Title } from "./styles";
+import { Coffee, Package, ShoppingCart, ShoppingCartSimple, Timer } from "phosphor-react";
+import { Card, CardsWrapper, FeaturesList, HomeBanner, HomeMain } from "./styles";
 
 export function Home() {
   return (
     <main>
       <HomeBanner>
-        <HomeBannerContent>
+        <div>
           <div>
-            <Title>
+            <h1>
               Encontre o café perfeito para qualquer hora do dia
-            </Title>
-            <Subtitle>
+            </h1>
+            <h5>
               Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
-            </Subtitle>
+            </h5>
             <FeaturesList>
               <li>
                 <span>
@@ -43,10 +43,91 @@ export function Home() {
           <div>
             <img src="/src/assets/home-image.png" alt="" />
           </div>
-        </HomeBannerContent>
+        </div>
       </HomeBanner>
       <HomeMain>
-        main content
+        <h2>
+          Nossos cafés
+        </h2>
+        <CardsWrapper>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+          <Card>
+            <img src="/src/assets/coffees/expresso.png" alt="" />
+            <span>TRADICIONAL</span>
+            <h4>Expresso Tradicional</h4>
+            <p>O tradicional café feito com água quente e grãos moídos</p>
+            <div>
+              <span>R$ <span>9,99</span></span>
+              <input type="number" value="1" />
+              <button><ShoppingCartSimple size={22} weight="fill" color="#fff"/></button>
+            </div>
+          </Card>
+        </CardsWrapper>
       </HomeMain>
     </main>
   )
